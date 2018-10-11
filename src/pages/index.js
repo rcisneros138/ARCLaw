@@ -224,7 +224,7 @@ export default Homepage
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 1240) {
+      fluid(maxWidth: 3840, quality: 100) {
         ...GatsbyImageSharpFluid
       }
     }

@@ -6,11 +6,11 @@ const Header = props => (
   <StaticQuery
     query={graphql`
       query HeaderImageQuery {
-        headerImage: imageSharp(
-          fluid: { originalName: { regex: "/statueOfLib.png/" } }
-        ) {
-          sizes(maxWidth: 1240) {
-            ...GatsbyImageSharpSizes
+        headerImage: file(relativePath: { eq: "statueOfLib.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 3840, quality: 90) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
@@ -18,7 +18,7 @@ const Header = props => (
     render={data => (
       <section id="header">
         <Img
-          sizes={data.headerImage.sizes}
+          fluid={data.headerImage.childImageSharp.fluid}
           style={{
             position: 'absolute',
             left: 0,
@@ -50,15 +50,3 @@ const Header = props => (
 )
 
 export default Header
-
-// export const pageQuery = graphql`
-//   query HeaderImageQuery {
-//     headerImage: imageSharp(
-//       fluid: { originalName: { regex: "/header.jpg/" } }
-//     ) {
-//       sizes(maxWidth: 1240) {
-//         ...GatsbyImageSharpSizes
-//       }
-//     }
-//   }
-// `
