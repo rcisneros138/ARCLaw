@@ -202,6 +202,14 @@ pre {
   text-align: right;
 }
 
+/* offer section */
+
+.offer {
+  div {
+    padding: 1em;
+  }
+}
+
 /* Section/Article */
 
 section,
@@ -993,8 +1001,8 @@ button,
   &.style2 {
     @include dark(#333);
     background-attachment: fixed, fixed;
-    // background-image:		url('../images/overlay1.png'),		url('../images/header.jpg');
-    // background-size:		auto,							cover;
+    background-image: url('../images/overlay1.png'), url('../images/header.jpg');
+    background-size: auto, cover;
   }
 }
 

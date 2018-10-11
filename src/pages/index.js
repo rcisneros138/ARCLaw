@@ -8,6 +8,13 @@ import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
 
+import Justice from '../assets/svg/justice'
+import SuiteCase from '../assets/svg/suitCase'
+import Will from '../assets/svg/will'
+import CourtHouse from '../assets/svg/courtHouse'
+import Siren from '../assets/svg/siren'
+import Money from '../assets/svg/money'
+
 class Homepage extends React.Component {
   render() {
     const siteTitle = 'Gatsby Starter - Photon'
@@ -56,27 +63,16 @@ class Homepage extends React.Component {
         </section>
 
         <section id="two" className="main style2">
-          <div className="grid-wrapper">
-            <div className="col-3" />
-            <div className="col-6">
-              <header>
-                <h2 className="center-title">Immigration</h2>
+          <div className="grid-wrapper offer">
+            <div className="col-12">
+              <header className="major">
+                <h2>What I do</h2>
+                <br />
               </header>
-              <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
-              </p>
-              <p>
-                Blandit faucibus proin. Ac aliquam integer adipiscing enim non
-                praesent vis commodo nunc phasellus cubilia ac risus accumsan.
-                Accumsan blandit. Lobortis phasellus non lobortis dit varius mi
-                varius accumsan lobortis. Blandit ante aliquam lacinia lorem
-                lobortis semper morbi col faucibus vitae integer placerat
-                accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing
-                curae consequat feugiat etiam dolore.
-              </p>
+            </div>
+            <div className="col-4">
+              <Justice />
+              <h4>Immigration</h4>
               <p>
                 Adipiscing a commodo ante nunc accumsan interdum mi ante
                 adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
@@ -84,15 +80,61 @@ class Homepage extends React.Component {
                 Adipiscing id accumsan adipiscing ipsum.
               </p>
             </div>
-          </div>
-        </section>
+            <div className="col-4">
+              <SuiteCase />
+              <h4>Family Law</h4>
+              <p>
+                Adipiscing a commodo ante nunc accumsan interdum mi ante
+                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
+                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
+                Adipiscing id accumsan adipiscing ipsum.
+              </p>
+            </div>
+            <div className="col-4">
+              <Will />
+              <h4>Wills</h4>
+              <p>
+                Adipiscing a commodo ante nunc accumsan interdum mi ante
+                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
+                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
+                Adipiscing id accumsan adipiscing ipsum.
+              </p>
+            </div>
+            <div className="col-4">
+              <Money />
+              <h4>Trusts &amp; Estates </h4>
+              <p>
+                Adipiscing a commodo ante nunc accumsan interdum mi ante
+                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
+                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
+                Adipiscing id accumsan adipiscing ipsum.
+              </p>
+            </div>
+            <div className="col-4">
+              <Siren />
+              <h4>Traffic</h4>
+              <p>
+                Adipiscing a commodo ante nunc accumsan interdum mi ante
+                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
+                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
+                Adipiscing id accumsan adipiscing ipsum.
+              </p>
+            </div>
+            <div className="col-4">
+              <CourtHouse />
+              <h4>DUI</h4>
+              <p>
+                Adipiscing a commodo ante nunc accumsan interdum mi ante
+                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
+                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
+                Adipiscing id accumsan adipiscing ipsum.
+              </p>
+            </div>
 
-        <section id="two" className="main style2">
-          <div className="grid-wrapper">
-            <div className="col-3" />
-            <div className="col-6">
+            {/* <div className="col-6">
               <header>
-                <h2 className="center-title">Family Law</h2>
+                <h2 className="center-title">What I do</h2>
+                <br />
               </header>
               <p>
                 Adipiscing a commodo ante nunc accumsan interdum mi ante
@@ -115,7 +157,7 @@ class Homepage extends React.Component {
                 nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
                 Adipiscing id accumsan adipiscing ipsum.
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
 
