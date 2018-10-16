@@ -18,7 +18,7 @@ import Money from '../assets/svg/money'
 
 class Homepage extends React.Component {
   render() {
-    const siteTitle = 'Gatsby Starter - Photon'
+    const siteTitle = 'ARC Law'
 
     return (
       <Layout>
