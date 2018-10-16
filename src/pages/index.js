@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 
@@ -170,7 +171,7 @@ class Homepage extends React.Component {
               {/* <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p> */}
             </div>
 
-            <div className="col-4">
+            <div className="col-6">
               <span className="image fit">
                 <img src={pic02} alt="" />
               </span>
@@ -184,7 +185,7 @@ class Homepage extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="col-4">
+            <div className="col-6">
               <span className="image fit">
                 <img src={pic03} alt="" />
               </span>
@@ -198,7 +199,7 @@ class Homepage extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="col-4">
+            {/* <div className="col-4">
               <span className="image fit">
                 <img src={pic04} alt="" />
               </span>
@@ -211,7 +212,7 @@ class Homepage extends React.Component {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </section>
       </Layout>
