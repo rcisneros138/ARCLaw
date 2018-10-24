@@ -1,6 +1,9 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { IconContext } from 'react-icons'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import Justice from '../assets/svg/justice'
 
 class Header extends React.Component {
   constructor(props) {
@@ -44,10 +47,30 @@ class Header extends React.Component {
         render={data => (
           <section id="header">
             <div className={this.state.topOfPage ? 'navigation' : 'scrollNav'}>
-              <a>Phone</a>
-              <a>Email</a>
-              <a>Address</a>
+              <IconContext.Provider value={{ className: 'navIcons' }}>
+                {/* <div className="logo">
+                  <a>
+                    <p className="Cisneros"> Cisneros</p> <Justice />{' '}
+                    <p className="Law">Law</p>
+                  </a>
+                </div> */}
+                <div className="contactInfo">
+                  <a href="tel:815-441-3708">
+                    <FaPhone /> + 815 441 3708
+                  </a>
+                  <a href="mailto:CisnerosLaw138@gmail.com">
+                    <FaEnvelope />
+                    CisnerosLaw138@gmail.com
+                  </a>
+                  <a>
+                    <FaMapMarkerAlt />
+                    Address
+                  </a>
+                </div>
+              </IconContext.Provider>
+              <div />
             </div>
+
             <Img
               fluid={data.headerImage.childImageSharp.fluid}
               style={{

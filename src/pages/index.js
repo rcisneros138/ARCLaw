@@ -71,37 +71,35 @@ class Homepage extends React.Component {
                 <br />
               </header>
             </div>
-            <div className="col-4">
+            <div className="col-6">
               <Justice />
               <h4>Immigration</h4>
               <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
+                In these times it more important than ever to keep abreast of
+                the law when it comes to your or a loved ones ability to obtain
+                a legal presence in the US! You want to stay, we want to help
+                you!
               </p>
             </div>
-            <div className="col-4">
+            <div className="col-6">
               <SuiteCase />
               <h4>Family Law</h4>
               <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
+                From Adoption, Child Custody, and Divorce; experience in the
+                family courts can keep your interests protected and make sure
+                you get the custody/visitation time you need!
               </p>
             </div>
-            <div className="col-4">
+            <div className="col-6">
               <Will />
-              <h4>Wills</h4>
+              <h4>Wills, Trusts, &amp; Estate</h4>
               <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
+                An estate plan that includes a plan for your assets is the most
+                important thing we can do for our loved ones. Give yourself
+                peace of mind and make sure your family is taken care of!
               </p>
             </div>
-            <div className="col-4">
+            {/* <div className="col-4">
               <Money />
               <h4>Trusts &amp; Estates </h4>
               <p>
@@ -110,18 +108,16 @@ class Homepage extends React.Component {
                 nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
                 Adipiscing id accumsan adipiscing ipsum.
               </p>
-            </div>
-            <div className="col-4">
+            </div> */}
+            <div className="col-6">
               <Siren />
-              <h4>Traffic</h4>
+              <h4>Traffic &amp; DUI</h4>
               <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
+                Traffic fines, DUI's and tickets can affect your driving
+                privileges , your pocketbook , or even your freedom!
               </p>
             </div>
-            <div className="col-4">
+            {/* <div className="col-4">
               <CourtHouse />
               <h4>DUI</h4>
               <p>
@@ -130,7 +126,7 @@ class Homepage extends React.Component {
                 nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
                 Adipiscing id accumsan adipiscing ipsum.
               </p>
-            </div>
+            </div> */}
 
             {/* <div className="col-6">
               <header>
