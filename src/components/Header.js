@@ -31,6 +31,10 @@ class Header extends React.Component {
   }
 
   render() {
+    const { isMobile } = this.props
+    const phoneNumber = `+ 815 441 3708`
+    const emailAddress = `CisnerosLaw138@gmail.com`
+    const address = `address`
     return (
       <StaticQuery
         query={graphql`
@@ -54,17 +58,18 @@ class Header extends React.Component {
                     <p className="Law">Law</p>
                   </a>
                 </div> */}
-                <div className="contactInfo">
+                <div
+                  className={isMobile ? 'contactInfo-mobile' : 'contactInfo'}
+                >
                   <a href="tel:815-441-3708">
-                    <FaPhone /> + 815 441 3708
+                    <FaPhone /> {!isMobile && phoneNumber}
                   </a>
                   <a href="mailto:CisnerosLaw138@gmail.com">
-                    <FaEnvelope />
-                    CisnerosLaw138@gmail.com
+                    <FaEnvelope /> {!isMobile && emailAddress}
                   </a>
                   <a>
                     <FaMapMarkerAlt />
-                    Address
+                    {!isMobile && address}
                   </a>
                 </div>
               </IconContext.Provider>

@@ -9,6 +9,7 @@ class Template extends React.Component {
     super(props)
     this.state = {
       loading: 'is-loading',
+      isMobile: 'false',
     }
   }
 
@@ -16,6 +17,10 @@ class Template extends React.Component {
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
+    if (window.innerWidth < 768) {
+      this.setState({ isMobile: true })
+    }
+    window.addEventListener('resize', this.handleResize)
   }
 
   componentWillUnmount() {
@@ -24,12 +29,19 @@ class Template extends React.Component {
     }
   }
 
+  handleResize = () => {
+    const isMobile = window.innerWidth < 768
+    if (isMobile !== this.state.isMobile) {
+      this.setState({ isMobile })
+    }
+  }
+
   render() {
     const { children } = this.props
 
     return (
       <div className={`body ${this.state.loading}`}>
-        <Header />
+        <Header isMobile={this.state.isMobile} />
         {children}
         <Footer />
       </div>
