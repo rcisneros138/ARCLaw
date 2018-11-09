@@ -9,7 +9,7 @@ class Template extends React.Component {
     super(props)
     this.state = {
       loading: 'is-loading',
-      isMobile: 'false',
+      isMobile: false,
     }
   }
 
@@ -17,7 +17,7 @@ class Template extends React.Component {
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 1000) {
       this.setState({ isMobile: true })
     }
     window.addEventListener('resize', this.handleResize)
@@ -27,10 +27,11 @@ class Template extends React.Component {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId)
     }
+    window.removeEventListener('resize', this.handleResize)
   }
 
   handleResize = () => {
-    const isMobile = window.innerWidth < 768
+    const isMobile = window.innerWidth < 1000
     if (isMobile !== this.state.isMobile) {
       this.setState({ isMobile })
     }
