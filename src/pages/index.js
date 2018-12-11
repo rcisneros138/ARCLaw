@@ -15,6 +15,7 @@ import Will from '../assets/svg/will'
 import CourtHouse from '../assets/svg/courtHouse'
 import Siren from '../assets/svg/siren'
 import Money from '../assets/svg/money'
+import AvvoIcon from '../assets/svg/Avvo'
 
 class Homepage extends React.Component {
   render() {
@@ -51,6 +52,12 @@ class Homepage extends React.Component {
                 Memorial court before graduating with a Juris Doctorate and
                 moving back to the Chicago Suburbs.
               </p>
+              <a
+                href="https://www.avvo.com/attorneys/60901-illinois-anthony-cisneros-4989222.html"
+                className="button"
+              >
+                View full Profile
+              </a>
             </div>
             <div className="col-6">
               <span className="image fit">
@@ -175,7 +182,10 @@ class Homepage extends React.Component {
               <br />
               <ul className="actions">
                 <li>
-                  <a href="#" className="button">
+                  <a
+                    href="http://www.kankakeecountybarassociation.org/"
+                    className="button"
+                  >
                     More
                   </a>
                 </li>
@@ -189,7 +199,10 @@ class Homepage extends React.Component {
 
               <ul className="actions">
                 <li>
-                  <a href="#" className="button">
+                  <a
+                    href=" http://www.kankakeecountybarassociation.org/"
+                    className="button"
+                  >
                     More
                   </a>
                 </li>

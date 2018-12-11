@@ -64,7 +64,7 @@ a {
       'border-color #{_duration(transition)} ease-in-out'
     )
   );
-  border-bottom: dotted 1px _palette(fg);
+  // border-bottom: dotted 1px _palette(fg);
   color: inherit;
   text-decoration: none;
 
@@ -314,7 +314,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 100vw;
 
     a {
